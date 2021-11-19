@@ -45,16 +45,18 @@ nav {
 /* BODY */
 /* SEARCH */
 h1 {
-	font-size: 2rem;
+	font-size: 1.9rem;
 	margin: 0.67rem 0;
 }
 .searchHeaderTitle {
 	margin-bottom: 0.5rem;
+	padding-left: 2rem;
 }
 .searchForm {
 	display: inline-flex;
 	max-width: 100%;
 	overflow: auto;
+	padding-left: 2rem;
 }
 .searchFromSearchIcon {
 	padding: 0.25rem 1.25rem;
@@ -72,7 +74,7 @@ h1 {
 }
 .searchFormSearchinput {
 	border-right: none;
-	border-left: none;
+	border-left: #f2f2f2 1px solid;
 	border-top: #f2f2f2 1px solid;
 	border-bottom: #f2f2f2 1px solid;
 	padding: 0 1.5rem;
@@ -110,4 +112,47 @@ input {
 }
 .searchFormSearchIconIcon {
 	margin-left: 0.1rem;
+}
+.createMainHeader {
+	margin-bottom: 0.5rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.createForm {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2rem;
+	font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+	.searchForm {
+		display: flex;
+		width: 100%;
+	}
+	.searchFormSearchinput {
+		flex: 1;
+	}
+	.searchFormSubmitinputText {
+		display: none;
+	}
+	.searchFormSubmitinputIcon {
+		display: block;
+	}
+}
+@media screen and (max-width: 650px) {
+	.searchFiltersTitle {
+		width: 100%;
+	}
+	.searchFiltersFilter {
+		margin-right: 1rem;
+	}
+}
+@media screen and (min-width: 601px) {
+	.searchFormSubmitinputText {
+		display: block;
+	}
+	.searchFormSubmitinputIcon {
+		display: none !important;
+	}
 }
